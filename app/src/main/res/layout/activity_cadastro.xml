@@ -34,6 +34,88 @@
         tools:context="br.com.rlsystem.chat.CadastroActivity"
         tools:showIn="@layout/activity_cadastro">
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/txt_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txt_email"
+            android:layout_below="@+id/txt_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/txt_name"
+            android:layout_alignEnd="@+id/txt_name"
+            android:text="E-mail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txt_psw"
+            android:layout_below="@+id/txt_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/txt_email"
+            android:layout_alignEnd="@+id/txt_email"
+            android:hint="Password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txt_psw2"
+            android:layout_below="@+id/txt_psw"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/txt_psw"
+            android:layout_alignEnd="@+id/txt_psw"
+            android:hint="Confirm your password" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:id="@+id/btn_cadastrar"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/no_photo"
+            android:layout_below="@+id/txt_psw2"
+            android:layout_toLeftOf="@+id/btn_cadastrar"
+            android:layout_toStartOf="@+id/btn_cadastrar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sign In"
+            android:id="@+id/txt_sgn"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/btn_cadastrar"
+            android:layout_alignStart="@+id/btn_cadastrar" />
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
